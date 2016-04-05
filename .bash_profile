@@ -46,3 +46,7 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+# Add github tob completion
+# https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+source ~/git-completion.bash
