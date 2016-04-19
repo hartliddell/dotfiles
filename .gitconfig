@@ -21,13 +21,13 @@
 	# Commit all changes
 	ca = !git add -A && git commit -av
 
-	# Shorter commit
+	# Shorter commit statement
 	ci = commit
 
 	# List branches
 	br = branch
 
-	# Shorter checkout
+	# Shorter checkout statement
 	co = checkout
 
 	# Switch to a branch, creating it if necessary
