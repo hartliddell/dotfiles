@@ -50,3 +50,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # Add github tob completion
 # https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
 source ~/git-completion.bash
+
+# Load rbenv automatically
+eval "$(rbenv init -)"
