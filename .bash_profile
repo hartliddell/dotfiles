@@ -55,3 +55,7 @@ source ~/git-completion.bash
 # rbenv Setup - load automatically
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+#
+# Postgress Setup
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
