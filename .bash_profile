@@ -56,8 +56,8 @@ fi
 
 #
 # rbenv Setup - load automatically
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
 
 #
 # Postgress Setup
