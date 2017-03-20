@@ -1,6 +1,6 @@
 # Shutterstock
-alias sstklocaldev="HTTP_PORT=80 rock --env=dev run"
-alias sstklocallocal="HTTP_PORT=80 rock --env=local run"
+alias sstkll="HTTP_PORT=80 rock --env=local run"
+alias sstkld="HTTP_PORT=80 rock --env=dev run"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."

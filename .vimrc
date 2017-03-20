@@ -8,18 +8,36 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" Add bettor file browsing
 Plugin 'scrooloose/nerdtree'
+
+" Editorconfig to play nice with others
 Plugin 'editorconfig/editorconfig-vim'
+
+" LESS css syntax highlighter
 Plugin 'groenewege/vim-less'
+
+" Add fuzzysearch option
 Plugin 'ctrlpvim/ctrlp.vim'
+
+" Add better syntax highlighting for React
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+
+" Emmet for vim
 Plugin 'mattn/emmet-vim'
+
+" Add morkdown styles
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
+" Add Wakatime for good time tracking
 Bundle 'wakatime/vim-wakatime'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
