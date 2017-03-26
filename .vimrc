@@ -10,6 +10,7 @@ call vundle#begin()
 
 " Add bettor file browsing
 Plugin 'scrooloose/nerdtree'
+let NERDTreeShowHidden=1
 
 " Editorconfig to play nice with others
 Plugin 'editorconfig/editorconfig-vim'
@@ -30,6 +31,9 @@ Plugin 'mattn/emmet-vim'
 " Add morkdown styles
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+
+" Add better grepping to Vim
+Plugin 'dkprice/vim-easygrep'
 
 " Add Wakatime for good time tracking
 Bundle 'wakatime/vim-wakatime'
@@ -186,7 +190,7 @@ noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
 " CTRP.vim exclude spcific files and directories
 " https://github.com/kien/ctrlp.vim
-set wildignore+=*/tmp/*,*/node_modules/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*/tmp/*,*/node_modules/*,*/bower_components/*,*.so,*.swp,*.zip     " MacOSX/Linux
 
 " let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 " let g:ctrlp_custom_ignore = {
@@ -204,3 +208,6 @@ if has("autocmd")
 	" Treat .md files as Markdown
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
+
+let g:vim_markdown_folding_disabled = 1
+
