@@ -38,6 +38,25 @@ Plugin 'dkprice/vim-easygrep'
 " Add Wakatime for good time tracking
 Bundle 'wakatime/vim-wakatime'
 
+" ADD Twig syntax highlighting
+Plugin 'nelsyeung/twig.vim'
+
+" START all the good snippet stuff
+" Track the engine.
+Plugin 'SirVer/ultisnips'
+
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+" END all the good snippet stuff
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -210,4 +229,8 @@ if has("autocmd")
 endif
 
 let g:vim_markdown_folding_disabled = 1
+
+" MAP <Tab> key for emmet expansion
+" https://coderwall.com/p/_uhrxw/using-tab-key-as-abbreviation-expander-on-emmet-vim
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
