@@ -41,6 +41,9 @@ Bundle 'wakatime/vim-wakatime'
 " ADD Twig syntax highlighting
 Plugin 'nelsyeung/twig.vim'
 
+" ADD You Complete Me support
+Plugin 'Valloric/YouCompleteMe'
+
 " START all the good snippet stuff
 " Track the engine.
 Plugin 'SirVer/ultisnips'
@@ -49,7 +52,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<c-l>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
@@ -228,7 +231,12 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
 
-let g:vim_markdown_folding_disabled = 1
+" CODE FOLDING default rules
+" let g:vim_markdown_folding_disabled = 1
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
 
 " MAP <Tab> key for emmet expansion
 " https://coderwall.com/p/_uhrxw/using-tab-key-as-abbreviation-expander-on-emmet-vim
