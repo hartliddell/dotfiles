@@ -41,6 +41,9 @@ Bundle 'wakatime/vim-wakatime'
 " ADD Twig syntax highlighting
 Plugin 'nelsyeung/twig.vim'
 
+" ADD jsDoc support
+Plugin 'joegesualdo/jsdoc.vim'
+
 " ADD You Complete Me support
 Plugin 'Valloric/YouCompleteMe'
 
