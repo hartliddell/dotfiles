@@ -28,12 +28,9 @@ Plugin 'mxw/vim-jsx'
 " Emmet for vim
 Plugin 'mattn/emmet-vim'
 
-" Add morkdown styles
+" Add markdown styles
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
-
-" Add better grepping to Vim
-Plugin 'dkprice/vim-easygrep'
 
 " Add Wakatime for good time tracking
 Bundle 'wakatime/vim-wakatime'
