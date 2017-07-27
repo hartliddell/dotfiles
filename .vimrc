@@ -238,6 +238,9 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=2
 
+" Turn OFF Scratch Preview
+set completeopt-=preview
+
 " MAP <Tab> key for emmet expansion
 " https://coderwall.com/p/_uhrxw/using-tab-key-as-abbreviation-expander-on-emmet-vim
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
