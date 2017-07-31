@@ -63,6 +63,10 @@ fi
 # export PATH="$HOME/.rbenv/bin:$PATH"
 # eval "$(rbenv init -)"
 
+# Alias to Hub
+# https://github.com/github/hub
+eval "$(hub alias -s)"
+
 #
 # Postgress Setup
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
