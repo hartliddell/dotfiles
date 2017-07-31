@@ -65,7 +65,7 @@ fi
 
 # Alias to Hub
 # https://github.com/github/hub
-eval "$(hub alias -s)"
+# eval "$(hub alias -s)"
 
 #
 # Postgress Setup
