@@ -32,6 +32,9 @@ Plugin 'mattn/emmet-vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
+" Make Vim great for writing
+Plugin 'reedes/vim-pencil'
+
 " Add Wakatime for good time tracking
 Bundle 'wakatime/vim-wakatime'
 
@@ -83,6 +86,14 @@ set background=dark
 colorscheme solarized
 
 " let g:solarized_termtrans=1
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init()
+augroup END
+
+let g:pencil#textwidth = 74
 
 " Make Vim more useful
 set nocompatible
