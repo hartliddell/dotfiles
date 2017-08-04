@@ -12,43 +12,46 @@ call vundle#begin()
 Plugin 'scrooloose/nerdtree'
 let NERDTreeShowHidden=1
 
-" Editorconfig to play nice with others
+" editorconfig to play nice with others
 Plugin 'editorconfig/editorconfig-vim'
 
-" LESS css syntax highlighter
-Plugin 'groenewege/vim-less'
-
-" Add fuzzysearch option
+" add fuzzysearch option
 Plugin 'ctrlpvim/ctrlp.vim'
 
-" Add better syntax highlighting for React
+" less/css syntax highlighting
+Plugin 'groenewege/vim-less'
+
+" mustache/hbs syntax highlighting
+Plugin 'mustache/vim-mustache-handlebars'
+
+" twig syntax highlighting
+Plugin 'nelsyeung/twig.vim'
+
+" react syntax highlighting
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 
-" Emmet for vim
+" emmet for vim
 Plugin 'mattn/emmet-vim'
 
-" Add markdown styles
+" add markdown styles
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
-" Make Vim great for writing
+" make Vim great for writing
 Plugin 'reedes/vim-pencil'
 
-" Add Wakatime for good time tracking
+" add Wakatime for good time tracking
 Bundle 'wakatime/vim-wakatime'
 
-" ADD Twig syntax highlighting
-Plugin 'nelsyeung/twig.vim'
-
-" ADD jsDoc support
+" add jsDoc support
 Plugin 'joegesualdo/jsdoc.vim'
 
-" ADD You Complete Me support
+" add You Complete Me support
 Plugin 'Valloric/YouCompleteMe'
 
-" START all the good snippet stuff
-" Track the engine.
+" start all the good snippet stuff
+" track the engine.
 Plugin 'SirVer/ultisnips'
 
 " Snippets are separated from the engine. Add this if you want them:
