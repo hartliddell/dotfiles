@@ -30,6 +30,7 @@ Plugin 'nelsyeung/twig.vim'
 " react syntax highlighting
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'jelera/vim-javascript-syntax'
 
 " emmet for vim
 Plugin 'mattn/emmet-vim'
