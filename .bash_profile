@@ -70,3 +70,7 @@ fi
 #
 # Postgress Setup
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+# Set RYR variables.
+export RYR_GLOBAL_CONFIG_DIR="${HOME}/.config/ryr"
+export RYR_PROJECT_DIR="${HOME}/projects/request-yo-racks"
